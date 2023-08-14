@@ -7,7 +7,8 @@ on:
     workflow_dispatch:
 
 jobs:
-    name: Notification about who pulled changes
-    steps:
-        - run: echo "Gift pulled changes"
-        shell: bash
+    ChangeMade:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Gift pulled changes"
+              shell: bash
