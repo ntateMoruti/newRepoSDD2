@@ -1,0 +1,13 @@
+name: Notify changes pulled
+
+on:
+    pull:
+        branches:
+            - main
+    workflow_dispatch:
+
+jobs:
+    name: Notification about who pulled changes
+    steps:
+        - run: echo "Gift pulled changes"
+        shell: bash
