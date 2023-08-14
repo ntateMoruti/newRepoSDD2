@@ -1,0 +1,16 @@
+name: output message workflow
+
+on:
+    push:
+        branches:
+            - main
+            workflow_dispatch:
+
+jobs:
+    hello:
+        run-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Message showing
+            run: echo "Hellow World"
+            shell: bash
